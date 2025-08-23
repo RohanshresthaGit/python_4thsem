@@ -1,3 +1,5 @@
+#Assignment 2: Question no.1
+
 def make_card(name, age: int, message = "Have a good day.") -> str:
     if(not name):
         return "Please enter a valid name."
