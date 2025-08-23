@@ -1,4 +1,4 @@
-# local scope
+# Assignment 2: Question no.2
 num_1 = 0
 
 def display_num():
