@@ -2,10 +2,12 @@
 num_1 = 0
 
 def display_num():
+    num_2 = 10
     global num_1 
+    print("Initial Golbal variable:", num_1)
     num_1 = 20
-    return num_1
+    print("Global variable:", num_1)
+    print("Local variable:", num_2)
 
-print(display_num())
-print(num_1)
+display_num()
 
