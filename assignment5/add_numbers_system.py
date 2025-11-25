@@ -7,7 +7,6 @@ try:
     num1 = int(sys.argv[1])
     num2 = int(sys.argv[2])
 except ValueError:
-    print("Error: Both arguments must be numbers.")
     sys.exit("Please provide valid numbers to add.")
 
 result = num1 + num2
