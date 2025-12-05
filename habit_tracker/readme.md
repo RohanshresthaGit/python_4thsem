@@ -44,13 +44,11 @@
     Follow the steps below to clone and run this project:
 
     Step 1: Install Git(If Git is not installed):
-        Windows: download from git-scm.com
-        Mac/Linux: already installed usually
 
     Step 2: Clone the Repository
         Open Terminal or CMD and run:
         git clone https://github.com/<your-username>/habit-tracker.git
-        Replace <your-username> with your real GitHub username.
+        Note: **Replace <your-username> with your real GitHub username.**
         This will download the project folder onto your computer.
 
     Step 3: Navigate into the Project
