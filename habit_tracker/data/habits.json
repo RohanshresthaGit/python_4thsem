@@ -1,0 +1,16 @@
+[
+    {
+        "name": "learn python",
+        "goal": 60,
+        "progress": 40,
+        "streak": 1,
+        "last_marked": "2025-12-04"
+    },
+    {
+        "name": "learn ktor backend",
+        "goal": 120,
+        "progress": 10,
+        "streak": 1,
+        "last_marked": "2025-12-04"
+    }
+]
