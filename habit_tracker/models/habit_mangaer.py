@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime
+from utils.exceptions.app_exception import InputException
 from models.habit import Habit
 from models.progress_bar import ProgressBar
 
@@ -28,7 +29,10 @@ class HabitManager:
 
     def add_habit(self):
         name = input("Habit name: ")
-        goal = int(input("Daily goal (e.g., minutes): "))
+        try:
+            goal = int(input("Daily goal (e.g., minutes): "))
+        except Exception:
+            raise InputException("Please enter you goal in minutes(for eg: 10)")
 
         self.habits.append(Habit(name, goal))
         self.save_habits()
@@ -50,7 +54,10 @@ class HabitManager:
 
         for habit in self.habits:
             if habit.name == name:
-                minutes = int(input("How many minutes today? "))
+                try:
+                    minutes = int(input("How many minutes today? "))
+                except Exception:
+                    raise InputException("Please enter you progress in minutes(for eg: 10)")
                 habit.progress += minutes
 
                 today = datetime.now().strftime("%Y-%m-%d")
