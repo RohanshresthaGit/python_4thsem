@@ -15,6 +15,7 @@ def display_menu():
 
 def main():
     try:
+        print("Hello welcome to Habit tracker.")
         manager = HabitManager()
 
         while True:
